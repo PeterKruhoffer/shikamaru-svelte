@@ -13,7 +13,7 @@
 		use:enhance={({ formData }) => {
 			const name = String(formData.get('name'));
 			const description = String(formData.get('description'));
-			taskStore.update((prev) => [...prev, { name, description}]);
+			taskStore.update((prev) => [...prev, { name, description }]);
 			nameEl = '';
 			descriptionEl = '';
 			nameInput.focus();

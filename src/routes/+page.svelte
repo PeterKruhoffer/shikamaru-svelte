@@ -13,9 +13,8 @@
 			<p class="text-slate-100">No rooms found</p>
 		{:else}
 			{#each data.rooms as room}
-				<a
-					href={`/room/${room.id}`}
-					class="w-1/2 bg-teal-300 p-4 text-slate-900 transition-all duration-100 ease-in-out hover:-translate-x-4"
+				<a href={`/room/${room.id}`}
+				class="w-1/2 bg-teal-300 p-4 text-slate-900 transition-all duration-100 ease-in-out hover:-translate-x-4"
 				>
 					<h2 class="text-xl">{room.name}</h2>
 					<p>{room.description}</p>
